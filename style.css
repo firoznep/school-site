@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+
+/* for header */
+.header--main {
+  background-color: #222222;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 0 3rem;
+}
+
+/* for logo */
+
+.logo__img {
+  font-size: 1.5rem;
+  color: #ff3333;
+}
+
+/* for nav */
+
+.nav__list {
+  display: flex;
+}
+.nav__item {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+/* logo and nav item color... */
+.nav__item,
+.nav__item > a {
+  color: #b3b3b3;
+}
+.logo__img:hover,
+.nav__item:hover,
+.nav__item > a:hover {
+  color: #f1f1f1;
+  text-decoration: underline;
+}
+
+/* for dropdown */
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: #f3f3f3;
+  padding: 0.8rem;
+  box-shadow: 0 0 15px gray;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+.dropdown__item {
+  padding: 0.5rem;
+}
+.dropdown__item a {
+  color: black;
+}
+
+/* show dropdown on Mouse hover */
+.nav__item--show {
+  padding-right: 0;
+  padding-left: 0;
+  margin-left: 1rem;
+  margin-right: 2rem;
+}
+.nav__item--show:hover .dropdown {
+  display: block;
+}
+
+/* banner */
+.banner {
+  background: linear-gradient(to bottom, rgba(236, 159, 159, 0.3), transparent),
+    url("./images/adli-wahid-M3-07Kazp3Y-unsplash.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.banner__items {
+  background: rgba(156, 148, 148, 0.3);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  width: 35rem;
+  position: absolute;
+  left: 25%;
+  top: 30%;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+.banner__title {
+  font-size: 3rem;
+  color: #ff3333;
+  padding: 0.5rem;
+}
+.banner__description {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+.banner__description span {
+  font-size: 1.8rem;
+  color: #ff3333;
+}
+.button--primary {
+  background-color: #ff3333;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  box-shadow: 0 0 0.5rem black;
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+  transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
+  -ms-transition: transform 0.5s;
+  -o-transition: transform 0.5s;
+}
+.button--primary:hover {
+  transform: translateY(-0.3rem);
+  -webkit-transform: translateY(-0.3rem);
+  -moz-transform: translateY(-0.3rem);
+  -ms-transform: translateY(-0.3rem);
+  -o-transform: translateY(-0.3rem);
+}
