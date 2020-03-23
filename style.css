@@ -82,8 +82,7 @@ li {
 
 /* banner */
 .banner {
-  background: linear-gradient(to bottom, rgba(236, 159, 159, 0.3), transparent),
-    url("./images/adli-wahid-M3-07Kazp3Y-unsplash.jpg");
+  background: url("./images/adli-wahid-M3-07Kazp3Y-unsplash.jpg");
   height: 100vh;
   background-size: cover;
   background-position: center;
